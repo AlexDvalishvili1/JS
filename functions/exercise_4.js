@@ -1,9 +1,9 @@
-function log(message) {
-    console.log(message);
+function log(...args) {
+    let line = "";
+    for (let word of args) {
+        line += word + " ";
+    }
+    console.log(line);
 }
 
-log("Salamaleikum");
-
-//Short version
-//const log = (message) => console.log(message);
-
+log("Neighbor", "computer");
