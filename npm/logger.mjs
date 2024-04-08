@@ -1,3 +1,13 @@
 import chalk from "chalk";
 
-console.log(chalk.blue('Markus'), chalk.red('is the'), chalk.green('best'));
+export function logRed(...args) {
+    return chalk.red(args);
+}
+
+export function logBlue(...args) {
+    return chalk.blue(args);
+}
+
+export function logGreen(...args) {
+    return chalk.green(args);
+}
