@@ -8,7 +8,7 @@ async function execute() {
         let check;
         let number;
         do {
-            number = await prompt("Please enter number (1 - 100): ");
+            number = parseInt(await prompt("Please enter number (1 - 100): "));
             check = number >= 1 && number <= 100;
         } while (!check);
         return number;
